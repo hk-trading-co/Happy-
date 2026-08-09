@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HK Trading Co. - Trusted trading and distribution company in Sirsa, Haryana.">
+  <title>HK Trading Co. | Sirsa, Haryana</title>
+  <style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--green:#075b39;--deep:#063d29;--gold:#d7ad55;--cream:#fbfaf6;--ink:#17211c;--muted:#66736c}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+.header{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:15px 7%;background:rgba(251,250,246,.96);backdrop-filter:blur(10px);border-bottom:1px solid #e8e4d9}
+.brand{display:flex;align-items:center;gap:10px;color:var(--deep);text-decoration:none}
+.brand strong{display:block;font-size:18px;line-height:1}
+.brand small{display:block;font-size:10px;letter-spacing:3px;color:var(--gold);margin-top:3px}
+.logo-mark,.card-logo{display:grid;place-items:center;border:2px solid var(--gold);color:var(--gold);font-weight:900;letter-spacing:-2px}
+.logo-mark{width:43px;height:43px;border-radius:11px;font-size:19px;background:var(--deep)}
+.nav{display:flex;gap:26px}.nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:14px}.nav a:hover{color:var(--green)}
+.header-call,.btn{display:inline-block;text-decoration:none;font-weight:800;border-radius:999px;padding:11px 20px}
+.header-call{background:var(--green);color:white}
+.hero{min-height:720px;padding:90px 8%;display:flex;align-items:center;justify-content:space-between;gap:60px;color:white;background:radial-gradient(circle at 80% 20%,#167b4e,transparent 32%),linear-gradient(135deg,var(--deep),#0b6943)}
+.hero-content{max-width:700px}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:3px;font-weight:900;margin-bottom:14px}
+.hero h1{font-size:clamp(46px,7vw,78px);line-height:1.02;margin-bottom:24px}.hero h1 span,.section-heading span{color:var(--gold)}
+.hero-text{font-size:20px;max-width:620px;color:#e9f1ec}.actions{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
+.btn.primary{background:var(--gold);color:#1b281f}.btn.outline{border:1px solid rgba(255,255,255,.7);color:white}.btn.light{background:white;color:var(--green);margin-top:22px}
+.hero-card{width:330px;min-width:280px;padding:45px 30px;text-align:center;border:1px solid rgba(255,255,255,.25);border-radius:24px;background:rgba(255,255,255,.09);box-shadow:0 25px 70px rgba(0,0,0,.18)}
+.card-logo{width:105px;height:105px;border-radius:24px;margin:0 auto 22px;font-size:45px;background:rgba(0,0,0,.15)}.hero-card h2{font-size:25px}.hero-card p{color:#d9e8df}.mini-line{width:55px;height:2px;background:var(--gold);margin:20px auto}.hero-card .small{font-size:13px}
+.section{padding:95px 8%;text-align:center}.alt{background:#f0f5f1}.section-heading h2{font-size:44px;line-height:1.1}.lead{max-width:800px;margin:25px auto;color:var(--muted);font-size:18px}
+.stats{display:flex;justify-content:center;gap:20px;margin-top:45px;flex-wrap:wrap}.stats div{width:210px;padding:25px;border:1px solid #e1ded4;border-radius:16px;background:white}.stats strong{display:block;color:var(--green);font-size:30px}.stats span{font-weight:700;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:45px}.feature{background:white;padding:35px 25px;border-radius:18px;box-shadow:0 12px 35px rgba(0,0,0,.06);transition:.25s}.feature:hover{transform:translateY(-7px)}.icon{font-size:42px;margin-bottom:12px}.feature h3{font-size:21px;margin-bottom:8px}.feature p{color:var(--muted)}
+.service-grid{max-width:850px;margin:45px auto 0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.service-grid div{padding:18px;text-align:left;border-radius:12px;background:#fff;border:1px solid #e6e2d8;font-weight:700}
+.cta{text-align:center;padding:90px 20px;background:var(--green);color:white}.cta h2{font-size:42px}.cta p:not(.eyebrow){color:#dcebe3;font-size:18px}
+.contact-card{max-width:620px;margin:40px auto 0;background:white;border-radius:20px;padding:30px;text-align:left;box-shadow:0 15px 45px rgba(0,0,0,.07)}.contact-card>div{display:flex;gap:15px;padding:15px 0;border-bottom:1px solid #eee}.contact-card span{font-size:25px}.contact-card b{display:block}.contact-card a:not(.whatsapp){color:var(--green);font-weight:800;text-decoration:none}.contact-card p{color:var(--muted)}.whatsapp{display:block;text-align:center;margin-top:22px;padding:14px;border-radius:12px;background:#168c45;color:white;text-decoration:none;font-weight:900}
+footer{padding:28px 7%;display:flex;justify-content:space-between;align-items:center;gap:20px;background:#10231a;color:#dce7e1;font-size:13px}.footer-brand{display:flex;align-items:center;gap:10px}.footer-brand .logo-mark{width:35px;height:35px;font-size:15px}
+@media(max-width:800px){.header{padding:12px 5%}.nav{display:none}.header-call{padding:9px 14px;font-size:12px}.hero{padding:75px 6%;min-height:auto;flex-direction:column;align-items:flex-start}.hero-card{width:100%}.section{padding:70px 6%}.grid{grid-template-columns:1fr}.service-grid{grid-template-columns:1fr}.section-heading h2{font-size:36px}.cta h2{font-size:34px}footer{flex-direction:column;text-align:center}}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}.reveal.show{opacity:1;transform:none}
+
+</style>
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#home" aria-label="HK Trading Co. home">
+    <span class="logo-mark">HK</span>
+    <span><strong>HK Trading</strong><small>CO.</small></span>
+  </a>
+  <nav class="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="header-call" href="tel:+918168522855">Call Now</a>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">TRUST • QUALITY • GROWTH</p>
+    <h1>Your Trusted<br><span>Trading Partner</span></h1>
+    <p class="hero-text">HK Trading Co. connects quality products with reliable business solutions from Sirsa, Haryana.</p>
+    <div class="actions">
+      <a class="btn primary" href="#products">Explore Products</a>
+      <a class="btn outline" href="https://wa.me/918168522855" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="card-logo">HK</div>
+    <h2>HK Trading Co.</h2>
+    <p>Sirsa, Haryana</p>
+    <div class="mini-line"></div>
+    <p class="small">Reliable sourcing • Trading • Distribution</p>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">ABOUT US</p>
+    <h2>Business built on <span>trust</span></h2>
+  </div>
+  <p class="lead">HK Trading Co. is a trading and distribution business focused on dependable service, quality products and long-term business relationships.</p>
+  <div class="stats">
+    <div><strong>01</strong><span>Quality Focus</span></div>
+    <div><strong>02</strong><span>Reliable Supply</span></div>
+    <div><strong>03</strong><span>Customer First</span></div>
+  </div>
+</section>
+
+<section id="products" class="section alt">
+  <div class="section-heading">
+    <p class="eyebrow">WHAT WE OFFER</p>
+    <h2>Our <span>Products</span></h2>
+  </div>
+  <div class="grid">
+    <article class="feature"><div class="icon">📦</div><h3>General Trading</h3><p>Quality products sourced through dependable business channels.</p></article>
+    <article class="feature"><div class="icon">🛒</div><h3>Wholesale Supply</h3><p>Flexible supply solutions for retailers and business customers.</p></article>
+    <article class="feature"><div class="icon">🚚</div><h3>Distribution</h3><p>Efficient product movement and dependable delivery support.</p></article>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">OUR SERVICES</p>
+    <h2>How we <span>help</span></h2>
+  </div>
+  <div class="service-grid">
+    <div>✓ Product Sourcing</div>
+    <div>✓ Wholesale Trading</div>
+    <div>✓ Distribution Support</div>
+    <div>✓ Supplier Coordination</div>
+    <div>✓ B2B Trading</div>
+    <div>✓ Customer Support</div>
+  </div>
+</section>
+
+<section class="cta">
+  <p class="eyebrow">LET'S WORK TOGETHER</p>
+  <h2>Have a trading requirement?</h2>
+  <p>Talk to HK Trading Co. today.</p>
+  <a class="btn light" href="tel:+918168522855">Call 8168522855</a>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="section-heading">
+    <p class="eyebrow">CONTACT</p>
+    <h2>Get in <span>touch</span></h2>
+  </div>
+  <div class="contact-card">
+    <div><span>📞</span><div><b>Phone</b><a href="tel:+918168522855">+91 81685 22855</a></div></div>
+    <div><span>📍</span><div><b>Location</b><p>Sirsa, Haryana, India</p></div></div>
+    <a class="whatsapp" href="https://wa.me/918168522855" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-brand"><span class="logo-mark">HK</span><strong>HK Trading Co.</strong></div>
+  <p>© <span id="year"></span> HK Trading Co. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const revealItems = document.querySelectorAll(".feature, .stats div, .service-grid div");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target);
+    }
+  });
+}, {threshold: 0.12});
+
+revealItems.forEach((item) => {
+  item.classList.add("reveal");
+  observer.observe(item);
+});
+
+</script>
+</body>
+</html>
